@@ -3,23 +3,12 @@ import React, { Component } from 'react'
 export default class Navbar extends Component{
     render(){
         return(
-            <nav className="navbar has-background-link" role="navigation" aria-label="main navigation">
-                <div className="navbar-brand">
-
-                    <a role="button" className="navbar-burger burger" href="/" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    </a>
-                </div>
-
-                <div id="navbarBasicExample" className="navbar-menu " style={{paddingRight: 10, paddingTop: 5}}>
+            <nav className="navbar is-link" role="navigation" aria-label="main navigation">
+                <div id="navbarBasicExample" className="navbar-menu">
                     <div className="navbar-start">
-                    <h1 className="navbar-item">
-                        Home
-                    </h1>
+                    <a class="navbar-item has-text-white"href="/">Home</a>
                     </div>
-                    <div className="field is-grouped">
+                    <div className="field is-grouped" style={{paddingRight: 10, paddingTop: 8}}>
                         <p className="control is-expanded">
                             <input className="input" type="text" placeholder="Encontre um concurso"/>
                         </p>
@@ -28,6 +17,9 @@ export default class Navbar extends Component{
                             Search
                             </a>
                         </p>
+                        <button className="button is-success" style={{width: 100}}>
+                            Registre-se
+                        </button>
                     </div>
                 </div>
             </nav>
