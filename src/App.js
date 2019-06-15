@@ -1,18 +1,7 @@
-import React from 'react';
+import React from "react";
 
-import Home from './components/home/index'
-import Navbar from './components/navbar/index'
-import Footer from './components/footer/index'
-import Login from './components/login/index'
+import Router from "./Router";
 
-function App() {
-  return (
-    <div>
-      <Navbar/>
-      <Login/>
-      <Footer/>
-    </div>
-  );
-}
+const App = () => <Router />;
 
 export default App;

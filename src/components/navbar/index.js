@@ -17,9 +17,6 @@ export default class Navbar extends Component{
                             Search
                             </a>
                         </p>
-                        <button className="button is-success" style={{width: 100}}>
-                            Registre-se
-                        </button>
                     </div>
                 </div>
             </nav>
