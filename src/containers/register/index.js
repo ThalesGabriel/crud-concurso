@@ -18,17 +18,9 @@ export default class Registro extends Component{
                         </p>
                         <div className="field">
                             <p className="control has-icons-left has-icons-right">
-                                <input className="input" style={{width: 453}} type="text" placeholder="Nome do candidato"/>
+                                <input className="input" style={{width: 453}} type="text" placeholder="Nome do gerente"/>
                                 <span className="icon is-small is-left">
                                     <i className="fas fa-user"></i>
-                                </span>
-                            </p>
-                        </div>
-                        <div className="field">
-                            <p className="control has-icons-left has-icons-right">
-                                <input className="input" style={{width: 453}} type="text" placeholder="Número do candidato"/>
-                                <span className="icon is-small is-left">
-                                    <i className="fas fa-id-badge"></i>
                                 </span>
                             </p>
                         </div>

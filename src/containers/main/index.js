@@ -1,24 +1,20 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import { Route } from "react-router-dom";
 
-import Footer from '../../components/footer';
-import Navbar from '../../components/navbar';
+import Sidebar from '../../components/sidebar';
 
-class Main extends Component {
+export default class Home extends Component {
     constructor(props) {
-      super(props);
-      this.match = props.match;
+        super(props);
+        this.route = props.route;
     }
-  
-    render() {
-      return (
-        <div className="dashboard-main-wrapper">
-          <Navbar />
-          <Route exact path={'/'} component={Login} />
-          <Footer/>
-        </div>
-      );
+
+    render(){
+        return(
+            <div className="columns">
+                <Sidebar/>
+                <Route exact path="http://localhost:3000/" component={this.route} />
+            </div>
+        );
     }
-  }
-  
-  export default Main;
+}

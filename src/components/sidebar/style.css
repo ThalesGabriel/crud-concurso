@@ -1,0 +1,13 @@
+.menu{
+    width: 300px;
+    height: 649px;
+    background: #3E9B24;
+}
+
+#label-menu{
+    color: white;
+}
+
+#label-menu:hover{
+    color: #000;
+}

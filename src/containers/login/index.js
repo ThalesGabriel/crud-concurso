@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import { Link } from "react-router-dom";
+import Main from '../main'
 
 export default class Login extends Component{
     render(){
@@ -17,26 +18,26 @@ export default class Login extends Component{
                             <strong className="has-text-link" style={{fontSize: 30}}>Login</strong> 
                         </p>
                         <div className="field">
-                        <p className="control has-icons-left has-icons-right">
-                            <input className="input" style={{width: 453}} type="text" placeholder="Número do candidato"/>
-                            <span className="icon is-small is-left">
-                            <i className="far fa-id-badge"></i>
-                            </span>
-                        </p>
+                            <p className="control has-icons-left has-icons-right">
+                                <input className="input" style={{width: 453}} type="text" placeholder="Nome do gerente"/>
+                                <span className="icon is-small is-left">
+                                    <i className="fas fa-user"></i>
+                                </span>
+                            </p>
                         </div>
                         <div className="field">
-                        <p className="control has-icons-left">
-                            <input className="input" type="password" placeholder="Senha"/>
-                            <span className="icon is-small is-left">
-                            <i className="fas fa-lock"></i>
-                            </span>
-                        </p>
+                            <p className="control has-icons-left">
+                                <input className="input" type="password" placeholder="Senha"/>
+                                <span className="icon is-small is-left">
+                                <i className="fas fa-lock"></i>
+                                </span>
+                            </p>
                         </div>
                         <div className="field" style={{paddingTop: 30}} >
                         <p className="control has-text-centered">
-                            <button className="button is-success" style={{width: 200}}>
-                            Login
-                            </button>
+                            <Link to="/concursos" className="button is-success" style={{width: 200}}>
+                                Login
+                            </Link>
                         </p>
                         </div>
                     </div>
