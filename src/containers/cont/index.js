@@ -14,7 +14,7 @@ export default class Cont extends Component{
     handleChange = event => {
         const { id, value } = event.target;
         this.setState({ formData: { ...this.state.formData, [id]: value } });
-      };
+    };
 
     cadastrarConteudo = async() => {
         try{

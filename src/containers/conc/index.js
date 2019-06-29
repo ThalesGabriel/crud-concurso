@@ -5,14 +5,20 @@ import FormModal from './modal'
 
 export default class Exams extends Component{
     state = {
-        showModal: false
+        showModal: false,
+        cargo: []
     }
 
     closeModal = async () => {
         this.setState({
           showModal: false,
         });
-      };
+        this.saveCargo()
+    };
+
+    saveCargo = () => {
+        console.log(this.newArray)
+    }
 
     render(){
         const { showModal } = this.state
@@ -64,7 +70,6 @@ export default class Exams extends Component{
                 {showModal ? (
                 <FormModal
                   closeModalHandler={this.closeModal}
-                  editProductId={this.state.editProductId}
                 />
               ) : null}
             </div>

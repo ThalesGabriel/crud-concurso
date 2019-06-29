@@ -74,7 +74,7 @@ const Sidebar = () => (
             {state.dropOrg? 
                 <ul>
                     <li><Link id="label-menu" to="orgaos">Cadastrar</Link></li>
-                    <li><Link id="label-menu" to="exams">Editar</Link></li>
+                    <li><Link id="label-menu" to="orgaoslist">Editar</Link></li>
                 </ul>
             :
             null
