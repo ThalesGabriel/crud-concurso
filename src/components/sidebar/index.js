@@ -48,7 +48,7 @@ const Sidebar = () => (
             {state.dropCand? 
                 <ul>
                     <li><Link id="label-menu" to="/candidatos">Cadastrar</Link></li>
-                    <li><Link id="label-menu" to="exams">Editar</Link></li>
+                    <li><Link id="label-menu" to="/candidatos/lis">Editar</Link></li>
                 </ul>
             :
             null
@@ -61,7 +61,7 @@ const Sidebar = () => (
             {state.dropCont? 
                 <ul>
                     <li><Link id="label-menu" to="conteudos">Cadastrar</Link></li>
-                    <li><Link id="label-menu" to="exams">Editar</Link></li>
+                    <li><Link id="label-menu" to="conteudoslist">Editar</Link></li>
                 </ul>
             :
             null

@@ -1,7 +1,5 @@
 import React, {Component} from 'react'
 import { Link } from "react-router-dom";
-import Main from '../main'
-
 export default class Login extends Component{
     render(){
         return(

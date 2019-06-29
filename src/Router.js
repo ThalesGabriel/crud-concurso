@@ -8,6 +8,7 @@ import Exams from './containers/conc';
 import Cand from './containers/cand';
 import Cont from './containers/cont';
 import Org from './containers/org';
+import ContList from './containers/contList';
 
 const Router = () => (
     <BrowserRouter>
@@ -19,6 +20,8 @@ const Router = () => (
             <Route exact path="/main" component={Main} />
             <Route exact path="/conteudos" component={Cont} />
             <Route exact path="/orgaos" component={Org} />
+            <Route exact path="/conteudoslist" component={ContList} />
+
         </Switch>
     </BrowserRouter>
 )
