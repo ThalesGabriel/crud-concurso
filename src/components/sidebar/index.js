@@ -47,8 +47,8 @@ const Sidebar = () => (
             <p className="menu-label"><Link id="label-menu" onClick={() => dropdownCand()}>Candidatos</Link></p>
             {state.dropCand? 
                 <ul>
-                    <li><Link id="label-menu" to="/candidatos">Cadastrar</Link></li>
-                    <li><Link id="label-menu" to="/candidatos/lis">Editar</Link></li>
+                    <li><Link id="label-menu" to="candidatos">Cadastrar</Link></li>
+                    <li><Link id="label-menu" to="candidatoslist">Editar</Link></li>
                 </ul>
             :
             null
