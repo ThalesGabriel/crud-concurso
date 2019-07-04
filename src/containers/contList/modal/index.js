@@ -50,7 +50,7 @@ class FormModal extends Component {
       <div className="modal is-active">
         <div className="modal-background"></div>
         <div className="modal-content hax-text-centered" style={{background: '#fff', width: 400, height: 600}}>
-            <h1 style={{marginLeft: 20, marginTop: 20}}><strong>Cargo - Registro</strong></h1>
+            <h1 style={{marginLeft: 20, marginTop: 20}}><strong>Conteúdos - Edição</strong></h1>
             <hr style={{width: 900, marginTop: -1}}></hr>
             <label style={{marginLeft: 20}}>Nome do conteúdo</label>
             <input style={{width: 300, marginLeft: 50, marginTop: 5, marginBottom: 20}} id="titulo" value={this.state.formData.titulo} onChange={this.handleChange} className="input" type="text" placeholder="Titulo"/>        
