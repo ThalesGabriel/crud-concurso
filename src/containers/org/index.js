@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Sidebar from '../../components/sidebar';
 import "./style.css"
 import Axios from 'axios';
+import Navbar from '../../components/navbar';
 
 export default class Org extends Component{
     state ={
@@ -30,14 +30,14 @@ export default class Org extends Component{
 
     render(){
         return(
-            <div className="columns">
-                <Sidebar/>
+            <div >
+                <Navbar/>
                 <div style={{marginTop: 50, marginLeft: 50}}>
                     <h1 style={{marginLeft: 20}}><strong>Órgãos - Registro</strong></h1>
                     <hr style={{width: 700}}></hr>
                     <input id="nome" className="input" value={this.state.formData.nome} onChange={this.handleChange} type="text" placeholder="Nome"/>
                     
-                    <button style={{marginTop: 50}} className="button" id="cadastrar-concurso" onClick={() => this.postOrgao()}>CADASTRAR</button>
+                    <button style={{marginTop: 50}} className="button is-primary" onClick={() => this.postOrgao()}>CADASTRAR</button>
                 </div>
             </div>
         );

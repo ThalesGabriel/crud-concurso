@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Sidebar from '../../components/sidebar';
 import "./style.css";
 import Axios from 'axios';
+import Navbar from '../../components/navbar';
 
 export default class OrgList extends Component{
     constructor(props){
@@ -45,10 +45,10 @@ export default class OrgList extends Component{
     }   
 
     render(){
-        const { orgaos, showModal } = this.state
+        const { orgaos } = this.state
         return(
-            <div className="columns">
-                <Sidebar/>
+            <div>
+                <Navbar/>
                 <div style={{marginTop: 50, marginLeft: 50}}>
                     <h1 style={{marginLeft: 20}}><strong>Conteúdos - Lista</strong></h1>
                     <hr style={{width: 900}}></hr>

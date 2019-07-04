@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Sidebar from '../../components/sidebar';
 import "./style.css"
 import Axios from 'axios';
+import Navbar from '../../components/navbar';
 
 export default class Cont extends Component{
     state = {
@@ -32,8 +32,8 @@ export default class Cont extends Component{
 
     render(){
         return(
-            <div className="columns">
-                <Sidebar/>
+            <div>
+                <Navbar/>
                 <div style={{marginTop: 50, marginLeft: 50}}>
                     <h1 style={{marginLeft: 20}}><strong>Conteúdos - Registro</strong></h1>
                     <hr style={{width: 900}}></hr>
@@ -45,7 +45,7 @@ export default class Cont extends Component{
                     </div>
                     
                     <div className="columns">
-                        <button className="button" onClick={() => this.cadastrarConteudo()} style={{marginTop: 30, marginLeft: 10}} id="cadastrar-concurso">CADASTRAR</button>
+                        <button className="button is-primary" onClick={() => this.cadastrarConteudo()} style={{marginTop: 30, marginLeft: 10}}>CADASTRAR</button>
                     </div>
                     
                 </div>

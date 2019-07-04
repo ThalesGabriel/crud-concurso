@@ -5,13 +5,3 @@
 #input-orgao{
     width: 100px;
 }
-
-#cadastrar-concurso{
-    background: #3E9B24;
-    color: white;
-}
-
-#cadastrar-concurso:hover{
-    background: #2d861f;
-}
-

@@ -80,7 +80,8 @@ const Sidebar = () => (
             null
             }
             </li>
-        </ul>    
+        </ul>
+            
     </aside>
 );
 

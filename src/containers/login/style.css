@@ -11,3 +11,7 @@ body {
 #tab-ativa{
     color: #3E9B24;
 }
+
+#disabled-tab{
+    background: none;
+}

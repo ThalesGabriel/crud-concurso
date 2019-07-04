@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Sidebar from '../../components/sidebar';
 import "./style.css";
 import Axios from 'axios';
+import Navbar from '../../components/navbar';
 
 export default class CandList extends Component{
     constructor(props){
@@ -28,7 +28,7 @@ export default class CandList extends Component{
     handleChange = event => {
         const { id, value } = event.target;
         this.setState({ formData: { ...this.state.formData, [id]: value } });
-      };
+    };
 
     getCandidatos = async() => {
         try{
@@ -43,10 +43,10 @@ export default class CandList extends Component{
     render(){
         const { candidatos } = this.state
         return(
-            <div className="columns">
-                <Sidebar/>
+            <div >
+                <Navbar/>
                 <div style={{marginTop: 50, marginLeft: 50}}>
-                    <h1 style={{marginLeft: 20}}><strong>Conteúdos - Lista</strong></h1>
+                    <h1 style={{marginLeft: 20}}><strong>Candidatos - Lista</strong></h1>
                     <hr style={{width: 900}}></hr>
                     <table className="table">
                     <thead>

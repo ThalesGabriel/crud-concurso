@@ -12,9 +12,9 @@ class FormModal extends Component {
       isEdit: false,
       drop: '',
       dropBool: false,
+      dropdown: false,
       conteudos: [],
       conteudoSelecionados: [],
-      dropdown: false,
       formData: {
         name: "",
         description: "",
@@ -79,6 +79,7 @@ class FormModal extends Component {
     if(newArray.length <= 0){
       alert("Selecione um pelo menos 1 item!");     
     }else{
+      this.props.saveCargo(newArray)
       this.handleClose()
     }  
   }
